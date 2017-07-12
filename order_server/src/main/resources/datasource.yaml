@@ -1,0 +1,21 @@
+dds:
+  write:
+    jdbcUrl: jdbc:mysql://localhost:3306/order
+    password: liu1205
+    username: root
+    maxPoolSize: 10
+    minIdle: 3
+    poolName: master
+  read:
+    - jdbcUrl: jdbc:mysql://localhost:3306/test
+      password: liu1205
+      username: root
+      maxPoolSize: 10
+      minIdle: 3
+      poolName: slave1
+    - jdbcUrl: jdbc:mysql://localhost:3306/master
+      password: liu1205
+      username: root
+      maxPoolSize: 10
+      minIdle: 3
+      poolName: slave2
