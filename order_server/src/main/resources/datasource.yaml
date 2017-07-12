@@ -13,9 +13,11 @@ dds:
       maxPoolSize: 10
       minIdle: 3
       poolName: slave1
+      readOnly: true
     - jdbcUrl: jdbc:mysql://localhost:3306/master
       password: liu1205
       username: root
       maxPoolSize: 10
       minIdle: 3
       poolName: slave2
+      readOnly: true
